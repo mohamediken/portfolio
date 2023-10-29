@@ -22,7 +22,6 @@ const Footer = () => {
           </a>
           <a 
           data-aos="fade-up" data-aos-duration="1200"
-          git init
             href="https://wa.me/qr/YDSQ4ZZRAMMGP1"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
