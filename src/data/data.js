@@ -3,7 +3,7 @@
 export const data = [
   {
     id: 1,
-    img: 'https://i.postimg.cc/VkRWdHWx/57214s81.jpg',
+    img: 'src\\assets\\mask.jpg',
     title: "Détection de Masque",
     desc: "",
     link: "",
@@ -11,10 +11,10 @@ export const data = [
   },
   {
     id: 2,
-    img: 'https://i.postimg.cc/Bv75CLyN/4167022.jpg',
+    img: 'src\\assets\\spam.jpg',
     title: "Détection de spam SMS",
     link: "",
-    git: "",
+    git: "https://github.com/mohamediken/D-tection-de-spam-SMS-en-utilisant-des-techniques-d-apprentissage-automatique",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const data = [
     title: " Gestion de laboratoire de recherche",
     desc: "",
     link: "src\\assets\\rapport.pdf",
-    git: "",
+    git: "https://github.com/mohamediken/Gestion-de-laboratoire-de-recherche",
   }
   
 ];
