@@ -31,7 +31,7 @@ const Footer = () => {
           <a 
           data-aos="fade-up" data-aos-duration="1400"
 
-            href="https://www.instagram.com/iken_mohamed7/"
+            href="https://www.instagram.com/iken_.mohamed/"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
             <RiInstagramFill className=" text-black text-3xl hover:scale-125 cursor-pointer" />
@@ -39,8 +39,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="sm:text-[12px]">
-          | Copyright &copy; <span>2023 Dev AlphaSpace </span> All rights reserved
-          <a href="#"></a> |
+         
         </div>
       </div>
     </div>

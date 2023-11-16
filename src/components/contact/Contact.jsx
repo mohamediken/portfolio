@@ -24,7 +24,7 @@ const Contact = () => {
             >
               <h1 className="text-5xl font-bold sm:text-3xl">stage PFE</h1>
               <h3 className="text-xl sm:text-lg">
-                Si vous avez des informations sur des opportunités de stage PFE ou des conseils à partager, n'hésitez pas à me contacter via les coordonnées suivantes
+                Si vous avez des informations sur des opportunités de stage PFE ou des conseils à partager, n'hésitez pas à me contacter 
               </h3>
             </div>
           </div>
@@ -43,7 +43,7 @@ const Contact = () => {
           <form
             data-aos="zoom-in"
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:xyz@gmail.com"
+            action="iknemohamed1@gmail.com"
           >
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"

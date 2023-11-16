@@ -11,9 +11,7 @@ const Resume = () => {
         <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
       </div>
       <div data-aos="fade-up" className="left flex-1 w-full">
-        <p className=" text-gray-700 font-medium w-[100%]">
-          Here are my  qualifications.
-        </p>
+        
       </div>
       {/* card*/}
       <div className="card-wrapper w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
