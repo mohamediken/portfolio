@@ -29,16 +29,15 @@ const Skills = ({ darkMode }) => {
               </p>
               <div data-aos="zoom-in" className="progress flex items-center h-[100%] justify-end md:justify-center">
                 <div className="flex flex-col gap-6 w-3/4 my-5 md:w-[90%]">
-                  <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
-                  <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
-                  <ProgressBar logo={<SiJavascript />} name={"JavaScript"} value={75} />
-                  <ProgressBar logo={<SiPython />} name={"Python"} value={85} />
-                  <ProgressBar logo={<SiPhp />} name={"PHP"} value={70} />
-                  <ProgressBar logo={<SiJava />} name={"Java"} value={75} />
-                  <ProgressBar logo={<GrCode/>} name={"SQL, PL/SQL"} value={80} />
-                  <ProgressBar logo={<GrCode />} name={"Langage de modélisation UML"} value={90} />
-                  <ProgressBar logo={<SiSpringboot />} name={"Spring Boot"} value={75} />
-                  <ProgressBar logo={<SiLatex />} name={"Latex"} value={95} />
+                  <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={60} />
+                  <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={55} />
+                  <ProgressBar logo={<SiJavascript />} name={"JavaScript"} value={45} />
+                  <ProgressBar logo={<SiPython />} name={"Python"} value={60} />
+                  <ProgressBar logo={<SiJava />} name={"Java"} value={50} />
+                  <ProgressBar logo={<GrCode/>} name={"SQL, PL/SQL"} value={55} />
+                  <ProgressBar logo={<GrCode />} name={"Langage de modélisation UML"} value={80} />
+                  <ProgressBar logo={<SiSpringboot />} name={"Spring Boot"} value={45} />
+                  <ProgressBar logo={<SiLatex />} name={"Latex"} value={90} />
                   <ProgressBar logo={<GrCode />} name={"Word,PowerPoint,Excel"} value={90} />
 
 
@@ -51,16 +50,16 @@ const Skills = ({ darkMode }) => {
 
               <div data-aos="zoom-in" className="progress flex items-center h-[100%] justify-end md:justify-center">
                 <div className="flex flex-col gap-6 w-3/4 my-5 md:w-[90%]">
-                  <ProgressBar logo={<GrCode />} name={"Analyse des données"} value={70} />
-                  <ProgressBar logo={<GrCode />} name={"Data Mining"} value={75} />
-                  <ProgressBar logo={<GrCode />} name={"Machine Learning"} value={75} />
-                  <ProgressBar logo={<GrCode />} name={"Deep Learning"} value={70} />
-                  <ProgressBar logo={<SiScikitlearn />} name={"Scikit Learn "} value={79} />
-                  <ProgressBar logo={<SiPandas />} name={"Pandas"} value={79} />
-                  <ProgressBar logo={<SiNumpy/>} name={"Numpy"} value={79} />
-                  <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={80} />
-                  <ProgressBar logo={<SiOracle />} name={"Oracle"} value={75} />
-                  <ProgressBar logo={<SiMysql />} name={"MySQL"} value={75} />
+                  <ProgressBar logo={<GrCode />} name={"Analyse des données"} value={60} />
+                  <ProgressBar logo={<GrCode />} name={"Data Mining"} value={55} />
+                  <ProgressBar logo={<GrCode />} name={"Machine Learning"} value={50} />
+                  <ProgressBar logo={<GrCode />} name={"Deep Learning"} value={50} />
+                  <ProgressBar logo={<SiScikitlearn />} name={"Scikit Learn "} value={60} />
+                  <ProgressBar logo={<SiPandas />} name={"Pandas"} value={52} />
+                  <ProgressBar logo={<SiNumpy/>} name={"Numpy"} value={53} />
+                  <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={50} />
+                  <ProgressBar logo={<SiOracle />} name={"Oracle"} value={50} />
+                  <ProgressBar logo={<SiMysql />} name={"MySQL"} value={50} />
 
 
                 </div>
