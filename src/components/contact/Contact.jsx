@@ -1,76 +1,79 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      user_email: e.target.user_email.value,
+      user_name: e.target.user_name.value,
+      message: e.target.message.value,
+      recipient_email: 'iknemohamed1@gmail.com', // Your email address
+    };
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+      }, (error) => {
+          console.log(error.text);
+          alert("Failed to send message, please try again.");
+      });
+
+    e.target.reset(); // Reset form after submission
+  };
+
   return (
     <div id="contact" className="container m-auto mt-16">
-      {/* heading */}
-      <div 
-      // data-aos="fade-up"
-       className="relative mb-5">
-        <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
-          Contact
-        </h3>
-        <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
+      {/* Heading */}
+      <div className="relative mb-5 text-center">
+        <h3 className="text-4xl font-bold text-gray-800">Contact Me</h3>
       </div>
 
-      {/* card*/}
-      <div className="card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
-        <div className="left w-[70%] flex-1 flex items-center justify-center sm:flex-col sm:w-full">
-          <div className="flex-3 w-1/2 gap-3 flex items-end justify-end  flex-col sm:w-3/4">
-            <div
-            data-aos="zoom-in"
-            >
-              <h1 className="text-5xl font-bold sm:text-3xl">stage PFE</h1>
-              <h3 className="text-xl sm:text-lg">
-                Si vous avez des informations sur des opportunités de stage PFE ou des conseils à partager, n'hésitez pas à me contacter 
-              </h3>
-            </div>
+      {/* Card Wrapper */}
+      <div className="card-wrapper w-[90%] sm:w-full mx-auto mt-5 flex items-center justify-center">
+        <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-bold text-gray-800">Get in Touch!</h1>
+            <h3 className="text-md text-gray-600">
+              I'm open to new opportunities and collaborations. Feel free to drop me a message!
+            </h3>
           </div>
-          <div className=" flex p-5 items-center justify-center ">
-            <button
 
-              data-aos="zoom-in"
-
-              className= " text-yellow-500 font-extrabold text-3xl p-2 rounded-lg shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] "
-            >
-              <BsArrowRight className=" md:rotate-90" />
-            </button>
-          </div>
-        </div>
-        <div className="right flex-1">
-          <form
-            data-aos="zoom-in"
-            className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="iknemohamed1@gmail.com"
-          >
+          {/* Form */}
+          <form ref={form} onSubmit={sendEmail} className="mt-4 flex flex-col gap-5">
             <input
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+              className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
               type="email"
-              placeholder="e.g. example@email.com"
-              name=""
+              name="user_email"
+              placeholder="Your Email"
+              required
             />
             <input
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+              className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
               type="text"
-              placeholder="e.g. Iken Mohamed"
-              name=""
+              name="user_name"
+              placeholder="Your Name"
+              required
             />
             <textarea
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+              className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
               rows="4"
-              cols="50"
-              placeholder="Write your message"
-              name=""
-              id=""
+              name="message"
+              placeholder="Your Message"
+              required
             />
             <button
-              className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
+              className="bg-yellow-500 text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-2 hover:bg-yellow-600 transition duration-200"
               type="submit"
             >
-              <span>Send</span>
-              <RiSendPlaneFill/>
+              <span>Send Message</span>
+              <RiSendPlaneFill />
             </button>
           </form>
         </div>

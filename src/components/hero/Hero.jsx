@@ -20,12 +20,12 @@ const Hero = () => {
               data-aos="fade-up"
               className=" text-5xl font-bold sm:text-[2rem]"
             >
-              Hello, I'm Mohamed iken
+              Welcome! I’m Mohamed Iken
             </h2>
             <TypeAnimation
               data-aos="fade-up"
               sequence={[
-                "data scientist",
+                "Junior Data Scientist",
                 2000,
 
                 "",
@@ -39,8 +39,7 @@ const Hero = () => {
               // data-aos="fade-up"
               className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600 sm:text-[.95rem]"
             >
-               À la recherche d'opportunités de stage en Data Science, Machine Learning et Deep Learning
-            </p>
+            Looking for opportunities as a Data Scientist and Data Analyst in Business Intelligence.    </p>
           </div>
           <div data-aos="fade-up" className="buttons flex gap-5">
             
